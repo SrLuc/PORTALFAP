@@ -77,3 +77,153 @@ export const InfoHomeContent = styled.section`
     }
   }
 `;
+
+export const FooterContent = styled.footer`
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: ${softexTheme.spacing.veryLarge};
+
+  ${reposivityQuery.desktop} {
+    div {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        width: 300px;
+      }
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      span {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+          color: red;
+          img {
+            width: 40px;
+          }
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+      }
+    }
+
+    article {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      height: 50%;
+      margin: 0 10px;
+    }
+  }
+
+  ${reposivityQuery.tablet} {
+    div {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        width: 300px;
+      }
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      span {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+          color: red;
+          img {
+            width: 40px;
+          }
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+      }
+    }
+
+    article {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      height: 50%;
+      margin: 0 10px;
+    }
+  }
+
+  ${reposivityQuery.mobile} {
+    div {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      img {
+        width: 280px;
+      }
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+      margin: ${softexTheme.spacing.extraLarge};
+      width: 90%;
+
+      h5 {
+        font-size: 20px;
+      }
+
+      p{
+        padding:${softexTheme.spacing.small};
+        font-size: ${softexTheme.fontSizes.large};
+      }
+
+      span {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+
+        a {
+          img {
+            width: 50px;
+          }
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+      }
+    }
+
+    article {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+`;

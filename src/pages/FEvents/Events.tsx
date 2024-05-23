@@ -1,11 +1,15 @@
+import { styled } from "styled-components";
 
 interface EventsProps {}
 
+const StyledEventsPage = styled.section`
+  height: 100vh;
+`;
+
 const Events = ({}: EventsProps) => {
-  return <div>
-    <h1>Eventos</h1>
-    <p>Esta es la página de eventos</p>
-  </div>;
+  return <StyledEventsPage>
+   
+  </StyledEventsPage>;
 };
 
 export default Events;

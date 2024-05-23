@@ -1,12 +1,13 @@
-
+import styled from "styled-components";
 
 interface ProjectsProps {}
 
+const StyledProjectPage = styled.section`
+  height: 100vh;
+`;
+
 const Projects = ({}: ProjectsProps) => {
-  return <div>
-    <h1>Projects</h1>
-    <p>This is the projects page</p>
-  </div>;
+  return <StyledProjectPage></StyledProjectPage>;
 };
 
 export default Projects;

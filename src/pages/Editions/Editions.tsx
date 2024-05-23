@@ -1,11 +1,11 @@
+import styled from "styled-components";
 
-interface EditionProps {}
+const StyledEditionPage = styled.section`
+  height: 100vh;
+`;
 
-const Edition = ({}: EditionProps) => {
-  return <div>
-    <h1>Ediciones</h1>
-    <p>Esta es la página de ediciones</p>
-  </div>;
+const Edition = () => {
+  return <StyledEditionPage></StyledEditionPage>;
 };
 
 export default Edition;
